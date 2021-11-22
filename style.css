@@ -1,1 +1,13 @@
-body {background-color: grey;}
+body {background-image: url(background.jpg);
+background-repeat: no-repeat;
+background-size: cover;}
+
+main {
+    margin: 0 17rem;
+}
+
+
+.container, .title-game {
+    display: flex;
+    justify-content: center;
+}
