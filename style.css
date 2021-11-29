@@ -1,13 +1,50 @@
-body {background-image: url(background.jpg);
+* {box-sizing: border-box;}
+
+h1 {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+body {
+padding: 0;
+margin: 0; 
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100vw;
+height: 100vh;   
+background-image: url(background.jpg);
 background-repeat: no-repeat;
 background-size: cover;}
 
-main {
-    margin: 0 17rem;
-}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+    background-color: grey;
+  }
 
 
-.container, .title-game {
-    display: flex;
-    justify-content: center;
-}
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .test-btn {
+    background-color: hsl(236, 71%, 32%);
+    border: 2px solid hsl(200, 87%, 18%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+  }
+
+  .test-btn:hover {
+    border-color: rgb(233, 4, 4);
+  }
