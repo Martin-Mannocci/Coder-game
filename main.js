@@ -64,31 +64,41 @@ const textArray = [
             },
             {
                 text: "Te tomas el trabajo de ajustar las dagas a tu cinturon, antes de seguir tu camino.",
-                nextText: 5,
+                nextText: 4,
                 setEquip: {daggers: true}
             },
             {
                 text: "Decidis que las armas solo te van a hacer mas lento. Y lo que sea que haya delante tuyo, lo podes enfrentar con tus puños.",
-                nextText: 6,
+                nextText: 4,
                 setEquip: {fists: true}
+            },
+
+        ]
+        
+    },
+    {
+        id: 4,
+        text: "Despues de una caminata llegas a una puerta cerrada",
+        
+        options: [
+            {
+                text: "Test espadas",
+                reqEqp: (equipped)  => equipped.SnS
+            },
+            {
+                text: 'Test dagas',
+                reqEqp: (equipped)  => equipped.daggers
+            },
+            {
+                text: "test fists",
+                reqEqp: (equipped)  => equipped.fists
+            },
+            {
+                text: "no reqEqp yay"
             }
         ]
-    },
-    {
-        id:4,
-        text: "Test espadas",
-        reqEqp: (equipped)  => equipped.SnS
-    },
-    {
-        id: 5,
-        text: 'Test dagas',
-        reqEqp: (equipped)  => equipped.daggers
-    },
-    {
-        id:6,
-        text: "test fists",
-        reqEqp: (equipped)  => equipped.fists
     }
+
 ]
 
 startGame()
